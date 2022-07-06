@@ -1171,3 +1171,9 @@ section#heading-landing-text p {
 #course-statistic-wrap p{
     line-height: 1.5em;
 }
+
+.text-elipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

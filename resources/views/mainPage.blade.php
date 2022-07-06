@@ -73,7 +73,7 @@
                                 <h4>
                                     {{ $subject->title }}
                                 </h4>
-                                <p>
+                                <p class="text-elipsis">
                                     {{ $subject->description }}
                                 </p>
                             </div>
