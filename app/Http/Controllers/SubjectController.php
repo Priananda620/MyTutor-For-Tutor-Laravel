@@ -19,7 +19,7 @@ class SubjectController extends Controller
     public function viewAddCourse(Request $request)
     {
         if(auth()->check()){
-            $subjects = Subject::where('tutor_id', Auth::user()->id)->orderBy('created_at', 'DESC')->paginate(5);
+            $subjects = Subject::where('tutor_id', Auth::user()->id)->orderBy('created_at', 'DESC')->get();
             return view('addCourse', compact('subjects'));
         }else{
             return redirect(url("/"));
